@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  beacon-client:
+    volumes:
+      - ./:/app
+      - /app/node_modules

@@ -1,0 +1,13 @@
+name: 'Validate Branch Name'
+on: pull_request
+
+jobs:
+  validate-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: deepakputhraya/action-branch-name@master
+        with:
+          regex: '((PROD|prod)-\d+)|(^dependabot/)'
+          ignore: main # Ignore exactly matching branch names from convention
+          min_length: 6 # Min length of the branch name
+          max_length: 100 # Max length of the branch name
