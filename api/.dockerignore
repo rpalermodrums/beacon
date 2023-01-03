@@ -1,2 +1,3 @@
-data/*
-.vscode/*
+fly.toml
+.git/
+*.sqlite3

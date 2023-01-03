@@ -1,6 +1,6 @@
-# fly.toml file generated for beacon-mono-client on 2023-01-02T22:52:01-05:00
+# fly.toml file generated for beacon-mono on 2023-01-02T22:45:03-05:00
 
-app = "beacon-mono-client"
+app = "beacon-mono-api"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -13,7 +13,7 @@ processes = []
 
 [[services]]
   http_checks = []
-  internal_port = 80
+  internal_port = 8080
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
