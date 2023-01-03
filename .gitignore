@@ -127,3 +127,47 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# VSCode
+.vscode/
+
+# PostgreSQL
+*.sql
+*.sql.gz
+*.dump
+*.dump.gz
+
+# db stuff -- not sure yet
+data/
+
+# Environment
+.env
+
+# IDE
+.idea
+*.swp
+
+# Dependencies
+client/.yarn/*
+!client/.yarn/cache
+!client/.yarn/patches
+!client/.yarn/plugins
+!client/.yarn/releases
+!client/.yarn/sdks
+!client/.yarn/versions
+client/node_modules
+# Production
+client/dist
+
+# Test Coverage
+client/coverage
+
+# OS X
+.DS_Store
+
+# FE Logs
+client/npm-debug.log*
+client/yarn-debug.log*
+client/yarn-error.log*
+

@@ -49,7 +49,7 @@ function NewEvent () {
             name='description'
             rules={{ required: 'Description is required' }}
             render={({ field }) => (
-              <TextInput label='Description' onChangeText={field.onChange} numberOfLines={5} style={{ borderWidth: 1, borderColor: 'black' }} multiline />
+              <TextInput label='Description' onChangeText={field.onChange} numberOfLines={5} multiline />
             )}
           />
 
@@ -57,7 +57,7 @@ function NewEvent () {
             control={control}
             name='city'
             render={({ field }) => (
-              <TextInput label='City' onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
+              <TextInput label='City' onChange={field.onChange} />
             )}
           />
 
@@ -65,7 +65,7 @@ function NewEvent () {
             control={control}
             name='state'
             render={({ field }) => (
-              <TextInput label='State' onChange={field.onChange} maxLength={2} style={{ borderWidth: 1, borderColor: 'black' }} />
+              <TextInput label='State' onChange={field.onChange} maxLength={2} />
             )}
           />
 
@@ -73,7 +73,7 @@ function NewEvent () {
             control={control}
             name='venue'
             render={({ field }) => (
-              <TextInput label='Venue' onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
+              <TextInput label='Venue' onChange={field.onChange} />
             )}
           />
 
@@ -81,7 +81,7 @@ function NewEvent () {
             control={control}
             name='date'
             render={({ field }) => (
-              <TextInput label='Date' onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
+              <TextInput label='Date' onChange={field.onChange} />
             )}
           />
 
@@ -89,7 +89,7 @@ function NewEvent () {
             control={control}
             name='time'
             render={({ field }) => (
-              <TextInput label='Time' onChange={field.onChange} style={{ borderWidth: 1, borderColor: 'black' }} />
+              <TextInput label='Time' onChange={field.onChange} />
             )}
           />
 
@@ -97,7 +97,7 @@ function NewEvent () {
             control={control}
             name='notes'
             render={({ field }) => (
-              <TextInput label='Notes' onChange={field.onChange} numberOfLines={5} style={{ borderWidth: 1, borderColor: 'black' }} multiline />
+              <TextInput label='Notes' onChange={field.onChange} numberOfLines={5} multiline />
             )}
           />
 

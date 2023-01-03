@@ -1,7 +1,4 @@
-FROM node:18-bullseye-slim as builder
-
-ARG GIT_REVISION
-ENV GIT_REVISION $GIT_REVISION
+FROM node:18-bullseye-slim AS builder
 
 WORKDIR /app
 
