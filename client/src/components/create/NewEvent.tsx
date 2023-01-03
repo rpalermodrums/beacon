@@ -4,6 +4,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import { useNavigate } from 'react-router';
 import { TextInput } from 'react-native-paper';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -21,6 +22,7 @@ function NewEvent () {
     } = useForm({
       resolver: zodResolver(schema),
     }),
+    navigate = useNavigate(),
     onSubmit = handleSubmit((data) => {
       // TODO: Submit data to API
       // eslint-disable-next-line no-console
@@ -29,6 +31,8 @@ function NewEvent () {
 
   return (
     <View>
+      <Button title='Back' onPress={() => { navigate('/'); }} />
+
       <Text>
         New Event
       </Text>
